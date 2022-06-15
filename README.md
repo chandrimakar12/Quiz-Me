@@ -9,5 +9,6 @@ This project is only a Self-learning platform without a commercial use. Due to p
 
 - [@chandrimakar12](https://github.com/chandrimakar12)
 - [@ananyamaity13](https://github.com/ananyamaity13)
+- [@Devilggh](https://github.com/Devilggh)
 
 
