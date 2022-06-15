@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Me</title>
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
+</head>
+<body style="background-image: url(images/bgimg.jpg); background-size:auto;">
+    <div class="wrapper">
+            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                <input id="start_input" type="text" name="name" placeholder="Please write your name">
+                <button>Start Quiz</button>
+            </form>
+        </div>
+        <div class="home" style="position: absolute; bottom:10px; left: 10px;">
+            <a class="home-icon" href="homepage.html">
+                <img height="50px" width="50px" src="images/housebutton.png" alt="Go Back to Home" class="chatbot-icon-logo" style="position: relative; display: block; float: left;">
+            </a>
+        </div>
+        <div class="chat-bar-collapsible" id="chat">
+            <button id="chat-button" type="button" class="collapsible" style="bottom:0; right: 0;">Chat with Us.
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+    
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+    
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+    
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+    
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
+    <footer class="Footer">&copy; Ananya ,Chandrima ,Debdutta ,Krishti--2022</footer>
+
+    <!-- site.js -->
+    <script src="js/start.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/responses.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

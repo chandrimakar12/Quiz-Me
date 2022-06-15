@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Title -->
+  <title>Quiz Me</title>
+</head>
+<body style="background-image: url(images/1home.png);">
+    <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Search Your Topics</h3>
+                <p>If you need any help in understanding any topics or you want to learn something new,click the button below.</p>
+                <button type="button" class="search" id="search" value="Search" onclick="window.location='searchbar.html';">Search</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Prepare for Your Next Test</h3>
+                <p>Not sure how much prepared are you for your next test?Take up the quiz or revise the chapter with your flashcards.</p>
+                <button type="button" class="quiz" id="quiz" value="Quiz Me!" onclick="window.location='start.html';"> Quiz Me! </button>
+                <button type="button" class="quiz" id="quiz" value="Quiz Me!" onclick="window.location='flashcard.html';"> Flashcards </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa fa-at" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Help Desk</h3>
+                <p>Need help regarding this platform? Mail your queries to the authors of the website.</p>
+                <a href="mailto:query.quizme@gmail.com"><button type="button" class="mail" id="mail" value="Mail Us">Mail Us</button></a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

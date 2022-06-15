@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!---we had linked our css file----->
+</head>
+<body>
+<div class="wrapper">
+    <video autoplay loop muted id="myvideo">
+        <source src="/background_vid.mp4" type="video/mp4">
+    </video>
+    <div class="full-page">
+        <div class="headline">
+                <h1>Welcome to Quiz Me!</h1>
+            </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box" >
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Email Id' name="email" required >
+		    <input type='password'class='input-field'placeholder='Enter Password' name="password" required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'onclick="window.location='homepage.html';">Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='Name' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required >
+             <button type='submit'class='submit-btn' style="margin-top:20px;" onclick="window.location='homepage.html';">Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
